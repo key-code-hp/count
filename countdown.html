@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel=icon href="images//favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <title>明日が始まるまで</title>
+    <style media="screen">
+      h1{
+        font-family: 'Kiwi Maru', serif;
+      }
+      h3{
+        font-family: 'Hachi Maru Pop', cursive;
+        font-size: 4rem;
+
+      }
+
+    </style>
+  </head>
+  <body>
+<ul>
+    <li><h1 class="until">明日が始まるまで</h1></li>
+    <h3 class="timer">あと
+    <span id="hour"></span>時間
+    <span id="min"></span>分
+    <span id="sec"></span>秒
+      </h3>
+      <body>
+        <div class="sone">
+
+
+        <li><h1>ただいまの時刻</h1></li>
+          </div>
+          <h3 id="time"></h3>
+          <a href="main.html">hp作成委員会</a>
+</ul>
+          <script>
+          time();
+          function time(){
+              var now = new Date();
+              document.getElementById("time").innerHTML = now.toLocaleTimeString();
+          }
+          setInterval('time()',1000);
+          </script>
+
+
+    <script src="countdown.js"></script>
+
+  </body>
+</html>
